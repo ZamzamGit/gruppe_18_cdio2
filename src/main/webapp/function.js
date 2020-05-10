@@ -41,6 +41,25 @@ function loadUsers() {
     });
 }
 
+function deleteUsers(deleteId) {
+    var user = {id: deleteId};
+    var json = JSON.stringify(user);
+
+    $.ajax({
+        url: "rest/endusers",
+        data: json,
+        contentType: "application/json",
+        method: "DELETE",
+        success: function (data) {
+            if (data === "true") {
+                loadUsers();
+            } else {
+                alert("Kan ikke slette bruger")
+            }
+        }
+    });
+}
+
 function insertUserData(user) {
     return '<tr><td>' + user.id + '</td>' +
         '<td>' + user.userName + '</td>' +
@@ -48,7 +67,6 @@ function insertUserData(user) {
         '<td>' + user.cpr + '</td>' +
         '<td>' + user.password+ '</td>' +
         '<td>' + user.role + '</td>' +
-        '<td><button></button></td>' +
         '</tr>';
 }
 
