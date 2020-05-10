@@ -1,0 +1,44 @@
+.userform {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    width: 500px;
+    height: 80px;
+     border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 30px;
+}
+
+.userform thead tr {
+    background-color: #C94244;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #C94244;
+    margin-top: 100px;
+    position: relative;
+    top: -50px;
+    padding: 20px;
+}
+
+#opret-button {
+    text-align: center;
+    position: relative;
+    top: -70px;
+
+}
+
+button {
+    background-color: #C94244;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}

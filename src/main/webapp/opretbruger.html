@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opret bruger</title>
+    <link rel="stylesheet" href="opretbruger.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="jquery.serialize-object.min.js"></script>
+    <script src =" function.js"></script>
+</head>
+<h1> Opret bruger</h1>
+
+<body>
+
+<div id = "opret">
+<form id = "create-user">
+    <input type = "text" class = "login-box" name = "id" placeholder="ID">
+    <br>
+    <input type = "text" class = "login-box" name = "userName" placeholder="Brugernavn">
+    <br>
+    <input type = "text" class = "login-box" name = "ini" placeholder="Initial">
+    <br>
+    <input type = "text" class = "login-box"  name ="cpr" placeholder="CPR">
+    <br>
+    <input type = "text" class = "login-box" name = "password" placeholder="Password">
+    <br>
+    <select name = "role">
+        <option disabled selected hidden>Vælg rolle</option>
+        <option>Administrator</option>
+        <option>Farmaceut</option>
+        <option>Produktionsleder</option>
+        <option>Laborant</option>
+    </select>
+    <br>
+    <button onclick="createUser(); switchPage('admin.html');">Opret</button>
+</form>
+</div>
+</body>
+</html>
